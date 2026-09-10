@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Website Builder</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand">AI Website Builder</div>
+<div><button id="downloadBtn" class="secondary">Download</button> <button id="generateBtn">Generate Website</button></div></header>
+<main class="app"><aside class="sidebar">
+<label for="prompt">Describe your website</label>
+<textarea id="prompt" placeholder="Example: Create a professional real-estate website called Innocent Group..."></textarea>
+<button id="sampleBtn" class="secondary full">Use sample prompt</button>
+<label>Quick options</label><div class="chips">
+<button data-prompt="Create a modern business website">Business</button>
+<button data-prompt="Create a real-estate website">Real Estate</button>
+<button data-prompt="Create an online store website">Store</button>
+<button data-prompt="Create a portfolio website">Portfolio</button>
+</div><div id="status" class="status">Ready.</div>
+</aside><section class="preview"><div class="previewbar"><span>Live Preview</span><span>generated-site</span></div>
+<iframe id="previewFrame" title="Generated website preview"></iframe></section></main>
+<script src="app.js"></script>
+</body></html>
