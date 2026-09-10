@@ -1,4 +1,4 @@
-const API_BASE=localStorage.getItem("API_BASE")||"http://localhost:8000";
+const API_BASE="https://web-creator-1.onrender.com";
 const promptBox=document.getElementById("prompt"),frame=document.getElementById("previewFrame"),statusBox=document.getElementById("status");
 const setStatus=t=>statusBox.textContent=t;
 document.querySelectorAll(".chips button").forEach(b=>b.onclick=()=>promptBox.value=b.dataset.prompt+". Make it modern, responsive and professional.");
